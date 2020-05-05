@@ -1,0 +1,31 @@
+{
+  "capabilities":
+      [
+        {
+          "browserName": "safari",
+          "version":"13.3",
+          "maxInstances": 1,
+          "platform":"MAC",
+	  "deviceName": "Phone_11_Pro_max",
+          "deviceType": "simulator",
+          "platformName":"iOS",
+          "platformVersion":"13.3",
+	  "udid": "A311989D-81CA-49C7-BB88-FDDC48376A71"
+        }
+      ],
+  "configuration":
+  {
+    "proxy": "com.qaprosoft.carina.grid.MobileRemoteProxy",
+    "url":"http://localhost:4446/wd/hub",
+    "port": 4842,
+    "host": "127.0.0.1",
+    "hubPort": 4446,
+    "hubHost": "localhost",
+    "timeout": 180,
+    "maxSession": 1,
+    "register": true,
+    "registerCycle": 5000,
+    "automationName": "XCUITest",
+    "downPollingLimit": 10
+  }
+}

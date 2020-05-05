@@ -4,8 +4,8 @@ BASEDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 # iSTF settings
 export PROVIDER_NAME=iMac-Developer.local
-export STF_PUBLIC_HOST=stage.qaprosoft.com
-export STF_PRIVATE_HOST=192.168.88.95
+export STF_PUBLIC_HOST=localhost
+export STF_PRIVATE_HOST=192.168.0.2
 
 export RETHINKDB_PORT_28015_TCP="tcp://${STF_PUBLIC_HOST}:28015"
 
@@ -13,14 +13,14 @@ export WEBSOCKET_PROTOCOL=ws
 export WEB_PROTOCOL=http
 
 # selenium hub settings
-export hubHost=stage.qaprosoft.com
+export hubHost=192.168.0.2
 export hubPort=4446
 
-export STF_PUBLIC_NODE_HOST=node-stage.qaprosoft.com
-export STF_PRIVATE_NODE_HOST=192.168.88.96
+export STF_PUBLIC_NODE_HOST=192.168.0.2
+export STF_PRIVATE_NODE_HOST=192.168.0.2
 
 export automation_name=XCUITest
-export appium_home=/usr/local/lib/node_modules/appium
+export appium_home=/Users/shov/.nvm/versions/node/v13.11.0/lib/node_modules/appium
 
 export selenium_home=${BASEDIR}
 export devices=${selenium_home}/devices.txt

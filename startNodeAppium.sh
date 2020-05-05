@@ -8,6 +8,7 @@ BASEDIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 . ${BASEDIR}/set_selenium_properties.sh
 . ${selenium_home}/getDeviceArgs.sh $devicePattern
 
+mkdir -p "$BASEDIR/configs"
 ${selenium_home}/configgen.sh $udid > configs/$udid.json
 
 
